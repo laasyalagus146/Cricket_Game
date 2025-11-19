@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Cricket Game</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <h1>Interactive Cricket Game</h1>
+        <p class="subtitle">Bat • Bowl • Score • Win!</p>
+    </header>
+
+    <main class="game-container">
+
+        <section class="scoreboard">
+            <h2>Scoreboard</h2>
+
+            <div class="score-row">
+                <span>Runs:</span>
+                <span id="runs">0</span>
+            </div>
+
+            <div class="score-row">
+                <span>Wickets:</span>
+                <span id="wickets">0</span>
+            </div>
+
+            <div class="score-row">
+                <span>Overs:</span>
+                <span id="overs">0.0</span>
+            </div>
+        </section>
+
+        <section class="controls">
+            <button id="bat-button">Bat</button>
+            <button id="bowl-button">Bowl</button>
+        </section>
+
+        <section class="commentary">
+            <h3>Commentary</h3>
+            <p id="commentary-text">Game starts now!</p>
+        </section>
+
+        <section class="animation-area">
+            <img src="images/ball.png" id="ball" class="hidden" />
+            <img src="images/wicket.png" id="wicket" class="hidden" />
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

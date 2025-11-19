@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e8f5e9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background: #2e7d32;
+    color: white;
+    padding: 20px 0;
+}
+
+.subtitle {
+    margin-top: -10px;
+    font-size: 14px;
+}
+
+.game-container {
+    padding: 20px;
+}
+
+.scoreboard {
+    background: white;
+    padding: 15px;
+    width: 250px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.score-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+.controls button {
+    padding: 12px 20px;
+    margin: 10px;
+    background: #43a047;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.controls button:disabled {
+    background: #888;
+}
+
+.commentary {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.animation-area {
+    margin-top: 30px;
+    height: 150px;
+    position: relative;
+}
+
+#ball {
+    width: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#wicket {
+    width: 150px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Ball animation */
+.hit {
+    animation: fly 1s ease-out forwards;
+}
+
+@keyframes fly {
+    0% { transform: translate(-50%, 0); }
+    100% { transform: translate(200px, -200px); }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .scoreboard {
+        width: 90%;
+    }
+}
